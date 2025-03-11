@@ -506,6 +506,57 @@ h4 {
 .footer p{
     color: grey;
 }
+#address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#address p {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 10px;
+    width: 100%; /* Take full width of parent */
+    justify-content: center;
+}
+
+/* Keep the icon styling */
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.social-icons svg {
+    width: 22px;
+    height: 22px;
+    color: white;
+}
+
+/* Optional: different colors for each social icon on hover */
+.social-icons a:nth-child(1):hover svg {
+    color: #E1306C; /* Instagram color */
+}
+
+.social-icons a:nth-child(2):hover svg {
+    color: #0077B5; /* LinkedIn color */
+}
+
+.social-icons a:nth-child(3):hover svg {
+    color: #1DA1F2; /* Twitter color */
+}
+
 
 .footer h4 {
     font-weight: lighter;
